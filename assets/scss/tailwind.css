@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap'); */
+@layer components {
+  .btn-primary {
+  @apply  h-[40px] bg-[#8AC6D0] w-fit pl-[45px] text-white pr-[45px] rounded-[20px] justify-center flex items-center uppercase mt-[30px] cursor-pointer;
+  }
+  .page-header-image{
+    @apply  w-full bg-cover bg-no-repeat h-44 bg-[center_top_25%];
+  }
+  .page-header-text{
+    @apply w-full h-full bg-[#00000033] text-white flex items-center justify-center text-[40px];
+  }
+  .con{
+    @apply p-[5%];
+  }
+  .center{
+    @apply flex items-center justify-center;
+  }
+  .overlay{
+    @apply bg-[#00000033];
+  }
+}
+
+.prose {
+  @apply max-w-none;
+}
+
+
+.page-numbers{
+  @apply  w-[32px] h-[32px];
+}
+.current{
+  @apply text-white rounded-full bg-[#8AC6D0];
+}
+
+
+
+.pagination{
+  @apply text-[18px] font-headers;
+}

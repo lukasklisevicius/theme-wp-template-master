@@ -1,0 +1,38 @@
+{
+  "name": "theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:tw": "tailwindcss -i ./assets/scss/tailwind.css -o ./dist/css/tailwind.css -w",
+    "dev:mix": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js --watch",
+    "build": "npm-run-all --parallel build:*",
+    "build:tw": "NODE_ENV=production tailwindcss -i ./assets/scss/tailwind.css -o ./dist/css/tailwind.css --minify",
+    "build:mix": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@tailwindcss/forms": "^0.5.2",
+    "@tailwindcss/typography": "^0.5.4",
+    "alpinejs": "^3.10.3",
+    "autoprefixer": "^10.4.7",
+    "copy-webpack-plugin": "^9.0.1",
+    "cross-env": "^7.0.3",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "laravel-mix": "^6.0.29",
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.13",
+    "sass": "^1.39.0",
+    "sass-loader": "^12.1.0",
+    "tailwindcss": "^3.1.7",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "description": "",
+  "dependencies": {
+    "react-scripts": "^5.0.1"
+  }
+}
